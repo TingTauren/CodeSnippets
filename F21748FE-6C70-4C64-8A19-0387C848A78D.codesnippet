@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TH_concurrentQueue</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>dispatch_queue_t concurrentQueue = dispatch_queue_create("CONCURRENTQUEUE", DISPATCH_QUEUE_CONCURRENT);
+        dispatch_async(concurrentQueue, ^{
+            
+            /** &lt;#执行代码#&gt; */
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                /** &lt;#更新UI#&gt; */
+            });
+            
+        });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F21748FE-6C70-4C64-8A19-0387C848A78D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>异步线程</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

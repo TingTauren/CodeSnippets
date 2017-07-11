@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TH_ControllerAchieve</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@dynamic view;
+
+#pragma mark ----- set get方法
+- (&lt;#ViewModel#&gt;*)viewModel {
+    if (_viewModel) return _viewModel;
+    _viewModel = [[&lt;#ViewModel#&gt; alloc] init];
+    return _viewModel;
+}
+
+#pragma mark ----- 生命周期方法
+- (void)loadView {
+    self.view = [&lt;#View#&gt; th_viewWithViewModel:self.viewModel];
+    self.view.frame = kScreenBounds;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.navibar th_serNavigationTitle:@"&lt;#NaviTitle#&gt;"];
+    
+    [self _th_handleViewConfig];
+}
+#pragma mark ----- 处理回调
+- (void)_th_handleViewConfig {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>207986C3-0875-405C-B0D3-A118292ACBBA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>controller每次实现方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
