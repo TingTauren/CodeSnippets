@@ -9,11 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>= XWValidateString(dict[@"&lt;#value#&gt;"]);/** &lt;#注释#&gt; */</string>
+	<string>= NTValidateString(dict[@"&lt;#value#&gt;"]);/**&lt; &lt;#注释#&gt; */</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2EEDE5D8-E040-409E-B9D7-F62A471730C1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>数据转模型-string</string>
 	<key>IDECodeSnippetUserSnippet</key>

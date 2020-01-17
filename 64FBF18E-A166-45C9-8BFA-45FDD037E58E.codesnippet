@@ -3,22 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>TH_Readwrite</string>
+	<string>TH_ModelPublicMethodAchieve</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#注释#&gt; */
-@property (nonatomic, readwrite) &lt;#NSString#&gt; *&lt;#value#&gt;;</string>
+	<string>- (instancetype)initWidthDict:(NSDictionary *) dict {
+    self = [super init];
+    if (self) {
+        [self tlbx_setDataWidthModel:dict];
+    }
+    return self;
+}
+- (NSMutableArray *)tlbx_initWidthArray:(NSArray *) array {
+    NSMutableArray *modelArr = [NSMutableArray array];
+    for (NSDictionary *dict in array) {
+        [modelArr addObject:[[&lt;#ModelName#&gt; alloc] initWidthDict:dict]];
+    }
+    return modelArr;
+}
+
+- (void)tlbx_setDataWidthModel:(NSDictionary *) dict {
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C04ACC45-293A-46ED-B32B-6158D3D77E91</string>
+	<string>64FBF18E-A166-45C9-8BFA-45FDD037E58E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>readwrite属性</string>
+	<string>模型公共方法实现</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

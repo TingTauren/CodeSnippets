@@ -12,7 +12,7 @@
 	<string>@dynamic view;
 
 #pragma mark ----- set get方法
-- (&lt;#ViewModel#&gt;*)viewModel {
+- (&lt;#ViewModel#&gt; *)viewModel {
     if (_viewModel) return _viewModel;
     _viewModel = [[&lt;#ViewModel#&gt; alloc] init];
     return _viewModel;
@@ -20,25 +20,31 @@
 
 #pragma mark ----- 生命周期方法
 - (void)loadView {
-    self.view = [&lt;#View#&gt; th_viewWithViewModel:self.viewModel];
-    self.view.frame = kScreenBounds;
+    self.view = [&lt;#View#&gt; nt_viewWithViewModel:self.viewModel];
+    self.view.frame = NT_SCREEN_BOUNDS;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navibar th_serNavigationTitle:@"&lt;#NaviTitle#&gt;"];
+    [self.navibar tlbx_setNavigationTitle:@"&lt;#NaviTitle#&gt;"];
     
-    [self _th_handleViewConfig];
+    [self _pogy_handleViewConfig];
+    [self _pogy_handleViewModelConfig];
 }
 #pragma mark ----- 处理回调
-- (void)_th_handleViewConfig {
+- (void)_pogy_handleViewConfig {
+    
+}
+- (void)_pogy_handleViewModelConfig {
     
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>207986C3-0875-405C-B0D3-A118292ACBBA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>controller每次实现方法</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>TH_Readwrite</string>
+	<string>TH_lazy</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#注释#&gt; */
-@property (nonatomic, readwrite) &lt;#NSString#&gt; *&lt;#value#&gt;;</string>
+	<string>if (_&lt;#attribute#&gt;) return _&lt;#attribute#&gt;;
+_&lt;#attribute#&gt; = [[&lt;#ClassType#&gt; alloc] init];
+return _&lt;#attribute#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C04ACC45-293A-46ED-B32B-6158D3D77E91</string>
+	<string>2768EDD5-7F8C-40E2-AA6C-4F418627F7F3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>readwrite属性</string>
+	<string>lazy loading</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

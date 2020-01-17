@@ -9,11 +9,12 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) &lt;#属性#&gt; /** &lt;#注释#&gt; */</string>
+	<string>/** &lt;#注释#&gt; */
+@property (nonatomic, copy) &lt;#属性#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2F9D3627-474F-4ABA-A051-A596CB804F35</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>copy属性</string>
 	<key>IDECodeSnippetUserSnippet</key>

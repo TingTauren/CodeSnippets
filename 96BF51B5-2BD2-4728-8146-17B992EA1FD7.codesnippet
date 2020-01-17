@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>TH_Readwrite</string>
+	<string>TH_MakeBottom</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#注释#&gt; */
-@property (nonatomic, readwrite) &lt;#NSString#&gt; *&lt;#value#&gt;;</string>
+	<string>make.bottom.nt_equalTo(&lt;#view#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C04ACC45-293A-46ED-B32B-6158D3D77E91</string>
+	<string>96BF51B5-2BD2-4728-8146-17B992EA1FD7</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>readwrite属性</string>
+	<string>约束Bottom</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

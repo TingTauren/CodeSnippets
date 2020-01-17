@@ -3,29 +3,43 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>TH_concurrentQueue</string>
+	<string>TH_RequestHeader</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_queue_t concurrentQueue = dispatch_queue_create("CONCURRENTQUEUE", DISPATCH_QUEUE_CONCURRENT);
+	<string>if (error) {
+    NT_BLOCK(failConfig, error.localizedDescription);
+    return;
+}
+NSDictionary *responseDict = (NSDictionary *)responseObject;
+NSInteger code = [NTValidateString(responseDict[@"code"]) integerValue]; /**&lt; 状态 */
+NSString *msg = NTValidateString(responseDict[@"msg"]); /**&lt; 信息 */
+if (code != 200) {
+    NT_BLOCK(failConfig, msg);
+    return;
+}
+
+&lt;#类型#&gt; *dataObj = NTValidate&lt;#类型#&gt;(responseDict[@"data"]);
+
+dispatch_queue_t concurrentQueue = dispatch_queue_create("CONCURRENTQUEUE", DISPATCH_QUEUE_CONCURRENT);
 dispatch_async(concurrentQueue, ^{
-    /** &lt;#说明#&gt; */
+    /** 解析数据 */
     
     dispatch_async(dispatch_get_main_queue(), ^{
         /** &lt;#更新UI#&gt; */
-        
+        NT_BLOCK(successConfig);
     });
-});</string>
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F21748FE-6C70-4C64-8A19-0387C848A78D</string>
+	<string>3485222E-5158-4E3F-A385-DBD840049D2B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>异步线程</string>
+	<string>请求方法头部解析模型</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
