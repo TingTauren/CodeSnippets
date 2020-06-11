@@ -17,6 +17,9 @@
 - (void)&lt;#type#&gt;_initailizeUI {
     
 }
+- (void)&lt;#type#&gt;_addUserEvents {
+    
+}
 
 #pragma mark ----- Private Methods
 

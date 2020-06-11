@@ -9,11 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout&gt;</string>
+	<string>&lt;UICollectionViewDataSource, UICollectionViewDelegateFlowLayout&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D906E94D-F500-4EFF-AE80-D2A346BBC3E4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>collection代理继承</string>
 	<key>IDECodeSnippetUserSnippet</key>

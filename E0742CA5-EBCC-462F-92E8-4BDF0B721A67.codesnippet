@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TH_RequestNewHeader</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>BOOL haveError = [NetWorkRequestTool nt_errorHanding:error response:responseObject holder:self result:^(NSString * _Nullable failString) {
+    NT_BLOCK(failConfig, failString);
+}];
+if (haveError) return;
+NT_STRONGIFY(self);
+
+NSDictionary *responseDict = (NSDictionary *)responseObject;
+        &lt;#类型#&gt; *dataObj = NTValidate&lt;#类型#&gt;(responseDict[@"data"]);
+        
+        dispatch_queue_t concurrentQueue = dispatch_queue_create("CONCURRENTQUEUE", DISPATCH_QUEUE_CONCURRENT);
+        dispatch_async(concurrentQueue, ^{
+            /** 解析数据 */
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                /** &lt;#更新UI#&gt; */
+                NT_BLOCK(successConfig);
+            });
+        });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E0742CA5-EBCC-462F-92E8-4BDF0B721A67</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>请求方法新解析模型</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

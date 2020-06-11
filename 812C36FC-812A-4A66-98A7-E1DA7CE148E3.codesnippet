@@ -10,9 +10,9 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (instancetype)initWidthDict:(NSDictionary *) dict;
-- (NSMutableArray *)tlbx_initWidthArray:(NSArray *) array;
+- (NSMutableArray *)nt_initWidthArray:(NSArray *) array;
 
-- (void)tlbx_setDataWidthModel:(NSDictionary *) dict;</string>
+- (void)nt_setDataWidthModel:(NSDictionary *) dict;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>812C36FC-812A-4A66-98A7-E1DA7CE148E3</string>
 	<key>IDECodeSnippetLanguage</key>

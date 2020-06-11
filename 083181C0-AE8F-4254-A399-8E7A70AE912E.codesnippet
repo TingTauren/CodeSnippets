@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>TH_lazyCollection</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (_&lt;#view#&gt;) return _&lt;#view#&gt;;
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    NSInteger count = &lt;#value#&gt;;
+    CGFloat leftSpacing = &lt;#value#&gt;;
+    CGFloat itemSpacing = &lt;#value#&gt;;
+    CGFloat itemWidth = (long)(NT_SCREEN_WIDTH-leftSpacing*2.0-itemSpacing*(count-1))/count;
+    layout.itemSize = CGSizeMake(itemWidth, itemWidth);
+    layout.minimumLineSpacing = itemSpacing;
+    layout.minimumInteritemSpacing = &lt;#value#&gt;;
+    layout.sectionInset = UIEdgeInsetsMake(&lt;#CGFloat top#&gt;, leftSpacing, &lt;#CGFloat bottom#&gt;, leftSpacing);
+    layout.scrollDirection = UICollectionViewScrollDirection&lt;#方向#&gt;;
+    
+    _&lt;#view#&gt; = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+    _&lt;#view#&gt;.backgroundColor = NT_HEXS(k_WhiteColor);
+    _&lt;#view#&gt;.delegate = self;
+    _&lt;#view#&gt;.dataSource = self;
+    [_&lt;#view#&gt; registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:&lt;#identifier#&gt;];
+    return _&lt;#view#&gt;;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>083181C0-AE8F-4254-A399-8E7A70AE912E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Collection懒加载</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

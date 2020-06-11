@@ -3,38 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>TH_ModelPublicMethodAchieve</string>
+	<string>TH_ClearColor</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)initWidthDict:(NSDictionary *) dict {
-    self = [super init];
-    if (self) {
-        [self nt_setDataWidthModel:dict];
-    }
-    return self;
-}
-- (NSMutableArray *)nt_initWidthArray:(NSArray *) array {
-    NSMutableArray *modelArr = [NSMutableArray array];
-    for (NSDictionary *dict in array) {
-        [modelArr addObject:[[&lt;#ModelName#&gt; alloc] initWidthDict:dict]];
-    }
-    return modelArr;
-}
-
-- (void)nt_setDataWidthModel:(NSDictionary *) dict {
-    
-}</string>
+	<string>[[UIColor whiteColor] colorWithAlphaComponent:0.0]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>64FBF18E-A166-45C9-8BFA-45FDD037E58E</string>
+	<string>9B1E0AE6-7BF8-4948-81BB-549D91A5E9B4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>模型公共方法实现</string>
+	<string>透明颜色</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

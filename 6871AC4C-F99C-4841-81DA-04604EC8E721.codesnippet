@@ -16,10 +16,14 @@
     self = [super init];
     if (self) {
         [self _&lt;#name#&gt;_initUI];
+        [self _&lt;#name#&gt;_addUserEvents];
     }
     return self;
 }
 - (void)_&lt;#name#&gt;_initUI {
+    
+}
+- (void)_&lt;#name#&gt;_addUserEvents {
     
 }
 

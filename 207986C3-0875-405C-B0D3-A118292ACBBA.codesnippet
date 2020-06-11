@@ -27,16 +27,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navibar tlbx_setNavigationTitle:@"&lt;#NaviTitle#&gt;"];
+    [self.navibar th_setNavigationTitle:@"&lt;#NaviTitle#&gt;"];
     
-    [self _pogy_handleViewConfig];
-    [self _pogy_handleViewModelConfig];
+    [self _nt_handleViewConfig];
+    [self _nt_handleViewModelConfig];
 }
 #pragma mark ----- 处理回调
-- (void)_pogy_handleViewConfig {
+- (void)_nt_handleViewConfig {
     
 }
-- (void)_pogy_handleViewModelConfig {
+- (void)_nt_handleViewModelConfig {
     
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
